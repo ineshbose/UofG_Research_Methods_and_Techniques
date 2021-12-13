@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=2.3cm]{geometry}
+
+\title{A survey on internet of things security: Requirements, challenges, and solutions}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{Reference}
+Hamed HaddadPajouh, Ali Dehghantanha, Reza M. Parizi, Mohammed Aledhari, and Hadis Karimipour. 2021. A survey on internet of things security: Requirements, challenges, and solutions. Internet of Things 14, (June 2021), 100129. DOI:https://doi.org/10.1016/J.IOT.2019.100129
+
+\subsection*{Short Summary} 
+The paper first defines what the 3 layers of IoT are, then outlines security requirements and issues both within each layer and within the larger infrastructure as well. App layer is mostly about increasing authorization/security within APIs, network layer needs to be monitored for larger scale patterns to get possible bot attacks and edge layer is concerned with the security around individual devices such as user access and encryption. Then a few solutions for possible types of attacks are outlined. The main take away is that data needs to be encrypted, APIs need stronger authentication at every step of the way, firewalls need to be used for the network layer and that the security of edge devices is still at biggest risk and needs AI based threat hunting.
+
+\subsection*{Why did I read this paper?}
+To get a basic understanding about what IoT is about, what it consists of and which challenges there are on a basic level since I have never learned anything about IoT. (and to find something to start the lit review with)
+
+\subsection*{Personal view of the paper}
+Good introduction to IoT security issues and solutions. There’s a few tables that give a good overview at a glance since there’s so many types of attacks in different layers and each attack requires a slightly different approach to mitigate.
+
+\subsection*{What problem does this paper address?}
+Security requirements in the 3 layers of IoT: 
+\begin{itemize}
+    \item \textbf{Application layer:} Application verification (things such as weak authentication or over-privileged access). Secure API (SOAP, REST). Information forensics (collecting data and analysing it for patterns).
+    \item \textbf{Network layer:} Traffic shaping (split data into streams for easier monitoring, NAT). Traffic monitoring very important to check traffic coming from edge layer (eg malware detection). Anomaly detection important to find bot attacks, difficult to do. 
+    \item \textbf{Edge layer:} Good and solid authentication on physical devices (TFA, SSO). Limited access to the device usage (network access control NAC for DNS). Threat hunting to secure the device (proactive and reactive). Encryption of user data between edge devices (cryptography). 
+    \item \textbf{Security concerns in the big picture (IoT as a whole):} Listing of different types of attacks that affect IoT environment (section 3, they’re basically listed). 
+\end{itemize}
+
+\subsection*{Is it an important problem?}
+Yes, otherwise our data and privacy are at risk of being exploited.
+
+\subsection*{What is the significance of the result and its solution?}
+Not sure what result there can be from a survey paper but I’ll go out on a limb and say that the significance is that there is a summary of the different problems and potential solutions for security in IoT and that this paper spreads awareness about them as well as inspire researchers to tackle some of these problems in detail.
+
+\subsection*{What are the claimed novel contributions of the paper?}
+Not sure if solutions count as novel contributions but I’ll just list them here:
+
+\begin{itemize}
+    \item Use light encryption on data
+    \item Implementing methods such as timestamps on packages to catch interceptions 
+    \item Implementing threat hunting modules to prevent virus-like infections amongst hardware 
+    \item To help with edge layer security further it’s a good idea to use AI for threat hunting 
+\end{itemize}
+
+\subsection*{What previous work is the basis for this research?}
+The closest the authors have mentioned to previous work is in general previous IoT security studies that only talked about the problems and did not outline any solutions. 
+
+\subsection*{What methodology has been used?}
+Since this is a survey, there’s no experiment methodology. 
+
+\subsection*{Does the methodology seem appropriate for this problem?}
+Since this is a survey, there’s no experiment methodology.
+
+\subsection*{What conclusions are drawn from the results?}
+Mostly that there is a lot more research and development to be done in the field of IoT security.
+
+\subsection*{Are they valid?}
+Yes, there is a dire need for more research in this topic.
+
+\subsection*{What did I learn?}
+What the 3 fundamentals layers of the IoT are, and that IoT is full of potential loopholes that can be exploited and need to be strengthened. Metaphorically speaking, if the ideal state of security of IoT is a stone wall, currently its like a football goal net. 
+
+\subsection*{What (if anything) would I have done differently?}
+I’d have proofread the paper one more time and gotten the feedback of a native speaker, there are some grammatical mistakes that made it tricky to read occasionally. No complaints on the actual subject of the paper.
+
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=2.3cm]{geometry}
+
+\title{Interoperability of Security-Enabled Internet of Things}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{Reference}
+Alam, S., Chowdhury, M. M., \& Noll, J. (2011). Interoperability of security-enabled internet of things. Wireless Personal Communications, 61(3), 567-586.
+
+\subsection*{Short Summary} 
+The main point of this paper was to introduce the concept of having an additional layer for the Internet of Things that would implement semantic technologies which can help interpret some knowledge and derive decisions based on the same. This layer would make processing more intelligent, adaptive, efficient, and most importantly, secure, since human intervention is not required. The authors introduce a scenario that envisions the trains and railway infrastructure where parts and components with unexpected conditions such as temperature, movement or vibrations would be detected, and the appropriate authority would be informed. There is a big emphasis on the requirement for sensors for this layer as they are able to provide external data into software which can help give more knowledge to the machine / thing, so in this scenario, the trains are expected to be equipped with many of these sensors that would interact using protocols and a machine-to-machine platform to make the necessary information available to the actor. These protocols include encryption schemes (for confidentiality), hash functions (for integrity), pragmatic measures (for availability), authentication technique, trustworthiness assessments and audits as discussed on Section 4.1. The M2M Platform would form a network between two or more machines so that they can communicate without human interaction. Afterwards, the authors discuss implementing this framework for IoT that they believe would help application develops with development efforts. Devices would be classified into nano – low compatibility \& no processing power, micro – limited processing power for basic tasks \& programmable with communication through gateways, and personal nodes – high processing power and direct communication. The framework would have four layers, each interacting with the one below. Finally, the authors share their prototype for a two-way communication between their micro node (Sun SPOT sensor) and the base station. At the time of writing, their main challenge was the scalability of the framework as there would be lots of sensor data. 
+
+\subsection*{Why did I read this paper?}
+The title involves security and Internet-of-Things. There appeared to be a new concept by reading the abstract and keywords that other papers did not have. 
+
+\subsection*{Personal view of the paper}
+The paper was very impressive. The introduction of the layer with the help of a framework and a prototype displays the work and research the authors put in. A few errors were present in the paper which made me think it wasn’t peer reviewed much. Since a lot of the product introduced relies on sensors, it was important to share how security would be addressed. With that said, this solution does not seem to be very efficient overall. In 2011, this idea would be very welcomed, however, I do not see this fitting well a decade later in 2021. I am interested in reading a follow-up which I believe would already be published.
+
+\subsection*{What problem does this paper address?}
+The paper addresses security and decision-making issues with Internet of Things. 
+
+\subsection*{Is it an important problem?}
+Yes, devices / things are expected to be intelligent enough as many of them are there to make tasks easier and convenient. Along with that, the authors’ solution would help security issues. 
+
+\subsection*{What is the significance of the result and its solution?}
+It is unsure to know the significance of the solution provided by the authors. There have been many devices that use sensors, and also have a semantic overlay to make decisions. The authors have had made their prototype and described the railway scenario. Along with that, the outcome of the research contributed to a project called pSHIELD. 
+
+\subsection*{What are the claimed novel contributions of the paper?}
+The paper claims to contribute a functional architecture of IoT framework that minimizes processing time, development efforts, and security vulnerabilities, as it would include a semantic overlay featuring three interlinked ontologies. 
+
+\subsection*{What previous work is the basis for this research?}
+The authors developed a prototype while writing this paper. Much of the prototype has also been possible using parts that were obviously made prior to the publication like Sun SPOT sensors, Shepherd M2M Platform, and their embedded system VIA EPIA N700. 
+
+\subsection*{What methodology has been used?}
+A prototype to show the integration of M2M Platform with sensors was used. 
+
+\subsection*{Does the methodology seem appropriate for this problem?}
+The prototype, unfortunately, did not seem appropriate. The introduced scenario was for IRIS, and there was not a lot of described security protocols put into practice. 
+
+\subsection*{Has the methodology been performed correctly?}
+Figure 6 displays the prototype developed by the authors. From the description, the sensor integration with an M2M Platform was successful. 
+
+\subsection*{What conclusions are drawn from the results?}
+The conclusions drawn were the requirement for sensors to provide knowledge to devices and enable interoperability. However, there may also be a concern with scalability of their result. 
+
+\subsection*{Are they valid?}
+Yes, the authors are correct that having a semantic overlay can make devices better, but they are also correct in saying that scalability will be an issue due to the load of sensor data. 
+
+\subsection*{What did I learn?}
+The paper did not introduce anything new to me as terms or concepts. 
+
+\subsection*{What (if anything) would I have done differently?}
+The paper does not have any great downsides. Examples were provided that also connected to the IRIS scenario. The security section (4.1), however, was lengthy and stated the obvious.
+
+\end{document}

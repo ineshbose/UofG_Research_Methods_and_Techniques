@@ -1,0 +1,60 @@
+% Research Methods and Techniques (M) Coursework
+%
+% Security Concerns with the Internet of Things
+% (E.g., security threats with IoT devices, methods for improving IoT
+% device security, user’s privacy concerns about IoT devices, etc)
+%
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=2.3cm]{geometry}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{biblatex}
+\usepackage{pgffor}
+\usepackage{subfiles}
+
+\addbibresource{references.bib}
+
+\def\papers{
+    1,2,4,5,7,8,9,10,11,12%
+}
+
+\title{%
+    {\Large Research Methods and Techniques (M) Coursework \par}
+    {\Huge Security Concerns with the Internet of Things \par}
+    \large
+}
+
+\author{%
+    Inesh Bose\\
+    Stefanos Charalambous\\
+    Veronika Shabun
+}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+%==============================================================================
+% SUMMARIES
+
+\section*{\huge Level 3 Summaries}
+
+\foreach \x in \papers
+{
+   \subsection*{\Large \citetitle{\x}}
+   \subfile{summaries/\x}
+   \break
+}
+
+%==============================================================================
+% REVIEW
+
+\section*{\huge Literature Review}
+
+\subfile{review}
+
+\end{document}

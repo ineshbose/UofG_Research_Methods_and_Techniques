@@ -1,0 +1,58 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=2.3cm]{geometry}
+
+\title{Raspberry Pi Malware: An Analysis of Cyberattacks Towards IoT Devices}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{Reference}
+Martin, E.D., Kargaard, J. and Sutherland, I., 2019, June. Raspberry Pi malware: an analysis of cyberattacks towards IoT devices. In 2019 10th International Conference on Dependable Systems, Services and Technologies (DESSERT) (pp. 161-166). IEEE.
+
+\subsection*{Short Summary} 
+This paper describes the growth of IoT devices, and how security is not one of the concerns of vendors such as Google and Amazon when creating the devices, and how regular users do not consider security when connecting those devices onto their home network. The paper focuses mainly on the malware attacks that affect those IoT devices and in particular Raspberry Pi devices as those can be found nearly in most IoT devices such as smart TVs or intelligent home alarm systems. It discusses how a large-scale attack can be performed when many IoT devices are compromised. For demonstration, a publicly available honeypot is set up and configured to look like a regular Raspberry Pi device, which then captures several different forms of malware attacks. It goes into detail about analysing the most frequent malware that was injected into the device, and how rapidly it can infect other similar devices. These attacks are possible due to the weak, guessable or hardcoded passwords that manufacturers put onto those devices. 
+
+\subsection*{Why did I read this paper?}
+This paper demonstrates how one out of million malware variants can easily compromise an IoT device and rapidly infect other devices. It gives the reader a good understanding on how these attacks are possible and the consequences of poor passwords. 
+
+\subsection*{Personal view of the paper}
+This paper makes several import contributions, most notably how fast malware can spread among IoT devices and how easy it is for the malware to infect other devices. It analyses one of the malwares captured on the honeypot, explaining how and why it is so easy for this kind of IoT devices to be infected. It talks about the severity of large-scale attacks and that other existing malware can be much more infectious and serious. The paper also presents a table showing how many attempts were made to infect the honeypot in a short period of only five days. 
+
+\subsection*{What problem does this paper address?}
+It shows the ease of infecting an IoT device with malware due to its weak, guessable, or hardcoded password along with how many attempts are made to compromise a single device on each day.
+
+\subsection*{Is it an important problem?}
+Yes. With the number of IoT devices dramatically increasing, their security stays the same. As of today (2021), there are reports estimating that there are 35.82 billion IoT devices connected to the internet, and in this paper a single IoT device was attacked 6566 times in the duration of seven days. 
+
+\subsection*{What is the significance of the result and its solution?}
+The ideas in this paper are highly significant and suggestions for manufactures to develop their devices with a uniquely generated password instead of reusing the same credentials and have a better security system overall. 
+
+\subsection*{What are the claimed novel contributions of the paper?}
+Random passwords generated for each IoT device created along with the increase focus on securing these IoT devices.
+
+\subsection*{What previous work is the basis for this research?}
+There is no prior work in this paper. However, this paper has taken inspiration from the increasing number of IoT devices that are connected to the internet and the million different malware variants that are out there infecting the majority of those devices. With their honeypot set up as a Raspberry Pi, the paper is able to show how many attempts are made daily on a single IoT device to gain control over it.
+
+\subsection*{What methodology has been used?}
+This paper configured a Raspberry Pi as a honeypot where they collected data on how many different IPs addresses tried to attack the device along with the number of login attempts. It proceeds on analysing the most frequent malware used to attack and then runs it in an internal lab to test the full functionality of the malware.
+
+\subsection*{Does the methodology seem appropriate for this problem?}
+Yes. Despite only being one IoT device out of thousand different ones, it was able to capture several different attacks and malware, which then proceeds on analysing the most frequent malware along with seeing its full functionality in an internal lab.
+
+\subsection*{What conclusions are drawn from the results?}
+The key conclusion is that with the rapid increase in IoT devices being connected to the internet, and their manufacturers continuing to not consider security when creating those devices, large-scale attacks will become more severe and dangerous.
+
+\subsection*{Are they valid?}
+Yes. Despite this paper being a small example of the capabilities of malware, there are already several malwares out in the wild, such as the Mirai malware, which is compromising IoT devices with weak, hardcoded and default credentials and commanding its botnet to make several DDoS attacks. 
+
+\subsection*{What did I learn?}
+I was already familiar with IoT malware, their different variants and the weak security of IoT devices. However, it was helpful to understand how these malwares are able to infect other devices so quickly and seamlessly. 
+
+\subsection*{What (if anything) would I have done differently?}
+I would not have done anything differently as it explains that the attacks are easy due to the poor credentials of the device’ manufactures, it analyses one of the most frequent malwares that infected their honeypot, and it also tests it in an internal lab to see its full functionality and the time it takes to start infecting other IoT devices.
+
+\end{document}

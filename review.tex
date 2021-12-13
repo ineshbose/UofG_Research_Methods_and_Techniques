@@ -1,0 +1,63 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=2.3cm]{geometry}
+\usepackage{hyperref}
+\usepackage{biblatex}
+
+
+\addbibresource{references.bib}
+
+\setlength{\parindent}{0pt}
+
+\title{%
+    {\Large Research Methods and Techniques (M) Coursework \par}
+    {\Huge Security Concerns with the Internet of Things \par}
+    {\large Literature Review \par}
+    \large
+}
+
+\author{%
+    Inesh Bose\\
+    Stefanos Charalambous\\
+    Veronika Shabun
+}
+
+\date{}
+
+\begin{document} 
+
+\maketitle
+
+%==============================================================================
+% INTRODUCTION
+
+\section*{Section 1: Introduction}
+
+In the age of rapidly developing technology that is the present times, an increasing amount of people possess mobile phones, tablets or other devices that can connect to the Internet as well as smart devices such as smart watches and smart TVs that have become more and more popular in recent years \cite{4}, laying a foundation for the Internet of Things (IoT) in which such devices communicate with each other without human supervision \cite{7}. While such development opens a world of possibilities for better quality of life, it also creates ground for user concerns about our privacy and security \cite{4}. In order to be able to identify potential attacks affecting the IoT, it is firstly necessary to divide the field into three layers \cite{7}: The first layer being the application layer, where APIs interact with users, collect input and receive output from other layers. The second layer is the network layer where protocols such as IPv4/IPv6, IEEE 802.x transport data between users, devices and servers. Finally, the third layer is the physical layer, which comprises of hardware such as RFID or WSN which is responsible for collecting real world data. This distinction is necessary because different layers encompass different types of attacks, such as application layers being susceptible to insecure APIs, network layers to traffic monitoring and physical layers to spoofing and jamming attacks \cite{1}. In order to deal with IoT attacks, a number of solutions have been proposed, a promising one being improving the current systems using Machine Learning techniques \cite{9}. The rest of the review will be structured as follows: section 2 will talk in more detail about the potential attacks in IoT and section 3 will go deeper into the security issues arising in the physical layer. Finally, section 4 will conclude the review.
+
+%==============================================================================
+% POTENTIAL ATTACKS
+
+\section*{Section 2: Potential Attacks}
+
+The application layer is the easiest to be attacked remotely as the vulnerabilities present here are caused by applications such as web services which are available for anyone on the internet. Some of the most popular attacks used within the application layer are malware attacks which are designed to infiltrate the target IoT device without the owner’s permission, or privacy leaks where IoT owner’s credentials are stolen and can be later used against them \cite{7}. An example of how easily and frequently attacks could happen would be a honeypot that was set up in \cite{2} which shows a small portion of the daily attacks captured on a single device. On the other hand, the physical layer becomes more difficult to protect due to its complexity. IoT devices are connected with each other automatically using a device controller \cite{5}, such as a smartphone and this makes those devices more favourable to attackers when it comes to physical layer attacks. The current security mechanisms (ex. text passwords, PINs, fingerprints) used to secure a smartphone device have numerous drawbacks that an attacker can use to bypass those measures \cite{5}. Different security mechanisms have different drawbacks where a PIN password is vulnerable to password guessing due to being normally 4-digit long and fingerprint passwords are vulnerable to fake fingerprinting and smudges as a smartphone will already be covered with its owner’s fingerprints \cite{5}.
+
+%==============================================================================
+% PHYSICAL LAYER
+
+\section*{Section 3: Physical Layer}
+
+The physical layer of the Internet of Things, also known as perception, sensing or edge layer \cite{1, 7, 11}, is very susceptible to a wide range of attacks due to the devices being out in the open and limited in computing capability \cite{8, 12}. This can range from physically harming the devices to jamming them by sending out false signals \cite{8}. For this reason it is important to talk about how to improve the security of the physical layer of which the most common technologies used are Radio Frequency Identification (RFID) and Wireless Sensor Networks (WSN) \cite{10}.  RFID consists of tags, readers and applications while WSNs consist of a cluster of sensors \cite{8}. Sensors are a viable way to provide devices with data regarding external environments, and this data can be used to make semantic decisions \cite{11} - the problem would be scalability since the larger a network of sensors, the more difficult to protect against attacks such as tampering attacks \cite{8}. Ukil et. al. \cite{12} (\citeyear{12}) focus on the low level aspect and discuss embedded systems such as RFID scanners used in IoT devices. These are susceptible to a variety of attacks such as unauthorized tag reading, eavesdropping or spoofing \cite{8}. A promising solution is to use Machine Learning methods such as Q-learning to improve recognition of threats within such a system \cite{9}.  
+
+%==============================================================================
+% CONCLUSION
+
+\section*{Section 4: Conclusion}
+
+%In conclusion,
+The need for heightening security in the Internet of Things is rising as more smart devices that communicate with each other get introduced into the internet. There are many types of attacks that can affect any aspect of a device, as was shown with the Raspberry Pi honeypot experiment. Within the three layers of IoT, each needs more research done to get a better security systems, especially the physical layer, as it is vulnerable to many types of attacks. Promising solutions to protect against attacks include Machine Learning methods although more research should be done in the field of security in the Internet of Things.
+
+%==============================================================================
+
+\printbibliography
+\end{document}

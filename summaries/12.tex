@@ -1,0 +1,60 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=2.3cm]{geometry}
+
+\title{Embedded security for Internet of Things}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{Reference}
+Ukil, A., Sen, J., \& Koilakonda, S. (2011, March). Embedded security for Internet of Things. In 2011 2nd National Conference on Emerging Trends and Applications in Computer Science (pp. 1-6). IEEE.
+
+\subsection*{Short Summary} 
+This paper attempts to discuss ubiquitous computing and embedded devices (the chipset/CPU) side of IoT. The authors believe it is very important since there are more devices than ever connecting to the Internet now exposing applications to attacks. Designs should think and consider security throughout the entire design process. The paper first outlines the requirements of embedded security in IoT, considering that these systems have low computing power and finite energy supply, and vulnerable to physical attacks like tampering and side-channel attacks. A major motivation for embedded security is the on-going third wave of hacking featuring wireless, intelligent devices that the author believe will certainly include terrorist cyber-strikes. Two areas and examples shared were war driving attacks and in-vehicular security, further saying that the goal of attacking a system is to either extract secret information and/or to put the system out of order. The authors acknowledge existence of cipher algorithms (such as RSA, ECC, AES, 3DES) that ensure confidentiality, and hashing algorithms (such as MD5 and SHA) that check integrity. The solution that the authors focus on is a Secure Execution Environment (SEE) that would execute applications in a protected manner so that attacks from the outside cannot tamper with the code or data in the environment. Two examples discussed by the authors in details are the Trusted Platform Module by Atmel and Trustzone by ARM. Secure Boot is also a main feature for embedded security, taking advantage of SoC ROM where data/programs cannot be rewritten. At the time, Android was not very popular, however, the authors were impressed by the security provided by its special API and present a project called SCANDROID enhancing the security for Android (at that time). Finally, the authors strongly feel that along with security, but processing needs to be considered as well since things are usually tiny devices with limited processing power – potentially by adopting dynamically accustom systems that would minimum unnecessary computation expenses.
+
+\subsection*{Why did I read this paper?}
+This paper talks about a specific area in the domain of IoT – embedded devices.
+
+\subsection*{Personal view of the paper}
+I did not enjoy reading this paper – not fond of systems personally, but the paper has some error repetition, and quite a few technical specifications and terms that the paper does not define.
+
+\subsection*{What problem does this paper address?}
+The paper addresses the problem in lack of security in embedded devices that connect to the Internet, and challenges faced by designers through their development process.
+
+\subsection*{Is it an important problem?}
+Security itself is an important problem, and for a thing connected to the Internet, it is important that all aspects – software and hardware – are secure. Yes.
+
+\subsection*{What is the significance of the result and its solution?}
+Unfortunately, I do not see a great significance in the result of this paper. Although at the time in 2011, since IoT was very new, this area might be important.
+
+\subsection*{What are the claimed novel contributions of the paper?}
+The contributions of the paper are addressing IoT processors to have a dedicated security system to reduce susceptibility and minimize unnecessary computational expenses.
+
+\subsection*{What previous work is the basis for this research?}
+Security algorithms like cipher (RSA, AES) and hashing (MD5, SHA) were very much established prior to this paper’s publication. There are a few platforms and devices mentioned that the paper also refers to as an example like CryptoManiac processor, TPM by Atmel, and Android by Open Handset Alliance (Google).
+
+\subsection*{What methodology has been used?}
+No methodology has been used. However, there seems to be a confusion when the paper talks about war driving and giving an example of a person driving around Fisherman’s Wharf.
+
+\subsection*{Does the methodology seem appropriate for this problem?}
+I believe that methodology was not important for the paper to get its point across.
+
+\subsection*{Has the methodology been performed correctly?}
+Not applicable.
+
+\subsection*{What conclusions are drawn from the results?}
+The authors conclude that the attacks continue to increase in sophistication, and the development of countermeasures is an on-going challenge.
+
+\subsection*{Are they valid?}
+Security is an issue as more techniques can come up. The authors are correct, but do not state anything unique.
+
+\subsection*{What did I learn?}
+I learnt a fair bit about systems and security, along with projects related to the same for IoT. 
+\subsection*{What (if anything) would I have done differently?}
+The introduction of the paper giving more background or another section and section division to help readers understand the rest of the paper would be useful. At the moment, it seems that there is a lot of prior understanding and knowledge required to read the paper.
+
+\end{document}

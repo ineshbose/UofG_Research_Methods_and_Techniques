@@ -1,0 +1,92 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=2.3cm]{geometry}
+
+\title{Machine learning based solutions for security of Internet of Things (IoT): A survey}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{Reference}
+Syeda Manjia Tahsien, Hadis Karimipour, and Petros Spachos. 2020. Machine learning based solutions for security of Internet of Things (IoT): A survey. Journal of Network and Computer Applications 161, (July 2020), 102630. DOI:https://doi.org/10.1016/J.JNCA.2020.102630 
+
+\subsection*{Short Summary} 
+The paper first introduces the 3 layers of IoT, physical, network and application layers. Then it follows up by describing in detail the different types of attacks such as active, passive and denial of service that can occur in IoT interactions. It then proceeds to define different ML techniques such as Neural Networks or Random Forest, their applications in IoT and which ones show the best performances in IoT security. The paper continues by listing several research challenges in this field, consisting of data security, infrastructure problems, computational restrictions, privacy issues and real-time usage viability. The final section is a statistical overview of literature interest in ML in IoT security as a field.
+
+\subsection*{Why did I read this paper?}
+To find possible and realistic solutions for the numerous issues that IoT security poses.
+
+\subsection*{Personal view of the paper}
+I thought this was a fine survey paper. It discusses a lot of research in the field and goes into the architecture of IoT, the attack types, techniques and ML techniques as well as solutions. While I wouldn’t recommend this paper as an introductory read for people unfamiliar of IoT as a whole, it is certainly worth reading. 
+
+\subsection*{What problem does this paper address?}
+The paper addresses the problems of IoT security and different types of attacks within the field. The general problems in IoT security can be divided into cyber and physical attacks. The latter would usually be something damaging the physical device, the former is much more widespread and more variable. Example attacks would be active attacks (someone breaking into your device and changing configs), passive attacks (listening in on your private data), denial of service (overloading a server with fake requests so that normal users can’t access the server properly), spoofing attacks (target identification to illegally access a system) and man in the middle attack (intercepting communication and pretending to be the server/user).
+
+\subsection*{Is it an important problem?}
+Yes, active attacks affect aspects of authentication, authorization, accessibility, confidentiality and integrity while passive attacks mostly affect privacy of personal data. And physical attacks obviously destroy hardware. 
+
+\subsection*{What is the significance of the result and its solution?}
+As this is a survey type paper, the significance of the result is an increased awareness as well as a better insight into the topic of ML solutions for IoT security challenges.
+
+\subsection*{What are the claimed novel contributions of the paper?}
+The paper presents several ML solutions and techniques that can be used to enhance IoT security. It also talks about problems that can arise from using ML in this way specifically. There is also a statistical overview of the amount of ML and IoT literature and which ML methods are the most popular in IoT security applications.
+
+\subsection*{What previous work is the basis for this research?}
+This papers surveys over 100 papers about ML, IoT, security in IoT and ML in IoT security, there didn’t seem to be any direct prior work by the authors.
+
+\subsection*{What methodology has been used?}
+
+\begin{itemize}
+    \item Supervised learning:
+        \begin{itemize}
+            \item Support Vector Machine (SVM): creates plane between 2 classes, maximises distance between the two while minimising error. High accuracy, good for intrusion detection, malware detection and smart grid attacks. 
+            
+            \item Bayesian Theorem/Naïve Bayes (NB):  uses probability theorem on existing data to predict next data. Widely used because easy to understand, implement and doesn’t need lots of data. Used for intrusion detection and anomaly detection. 
+            
+            \item K-nearest neighbour (KNN): uses Euclidian distance to anticipate unknown node using k-neighbours. Simple and cheap but also time-consuming to find unknown nodes. Used in intrusion detection, malware detections, and anomaly detection. 
+            
+            \item Random Forest (RF): uses Decision Trees (DTs) to find an algorithm to get good average output. Requires lots of data to construct algorithm so not applicable to real time protection. Used in DDOS (distributed denial of service). 
+            
+            \item Association Rule (AR): similar to KNN as in using mutual relationships in unknown data. Time-consuming and makes assumptions, so not realistic to use. Used in intrusion detection.  
+            
+            \item Decision Tree (DT): looks like a tree with different decision based on data properties. Used to be popular due to simplicity but requires too much data storage since several trees are needed. Used in DDoS and intrusion detection. 
+            
+            \item Neural Network (NN): Based on human brain neurons. Good for complex problems and for optimising response time but non-applicable for IoT systems due to the complexity of the algorithms. 
+            
+            \item Ensemble Learning (EL): New technique, uses several other ML techniques to solve the problem. High time-complexity. used for anomaly detection, malware detection, and intrusion detection. 
+        \end{itemize}
+
+    \item Unsupervised Learning: 
+        \begin{itemize}
+            \item Principal Component Analysis (PCA): Splits data into chunks to reduce complexity. Good for real time applications, very strong in combination with other ML techniques. 
+            
+            \item K-mean clustering: Splits data into clusters with a centroid. Not as effective as other techniques and only used in anomaly detection and Sybil attack detection. 
+            
+            \item Reinforcement learning (RL): performs actions to maximise feedback. Used a lot in devices such as air conditioning or methods such as Q-learning.
+        \end{itemize}
+\end{itemize}
+
+\subsection*{Does the methodology seem appropriate for this problem?}
+
+\begin{itemize}
+    \item \textbf{For edge/physical/perception layer:} In use already are Q-learning for authentication error and RL with CNNs for jamming attacks. Both techniques improved accuracy and performance, therefore they are appropriate.
+    \item \textbf{For network layer:} SVM, NN, and KNN for intrusion attacks is already widely used, so it is appropriate. ANNs for DDOS attacks were proposed but still require more research to determine effectiveness. Another proposition is an IoT SENTINEL model with RF for protection against unprotected device connection and to avoid damage. Several more techniques have been proposed with varying degrees of accuracy, but nevertheless promising. 
+    \item \textbf{For application layer:} K-NN, RF and Q-learning methods are already used often to catch malware or to protect against web-based attacks, thus appropriate. 
+\end{itemize}
+
+\subsection*{What conclusions are drawn from the results?}
+The first conclusion is that IoT will continue to grow as much as it has been recently and that improving the security of it will become more and more important as time goes on. As the result of the paper is a literature review including all relevant literature up to 2017, another conclusion is a hope for researchers to pick up on some of the untapped research in this area.
+
+\subsection*{Are they valid?}
+Yes, the conclusions are indeed valid and very important as a lot of our current infrastructure is at stake. 
+
+\subsection*{What did I learn?}
+I learned that ML is extremely useful to increase the quality of security in the IoT as well as different types of attacks and several ML techniques that can be used to protect against the former. 
+
+\subsection*{What (if anything) would I have done differently?}
+The paper is of a high quality so I don’t think there’s anything to be changed in it.
+
+\end{document}

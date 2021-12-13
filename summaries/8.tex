@@ -1,0 +1,69 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=2.3cm]{geometry}
+
+\title{Perception layer security in Internet of Things}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{Reference}
+Hasan Ali Khattak, Munam Ali Shah, Sangeen Khan, Ihsan Ali, and Muhammad Imran. 2019. Perception layer security in Internet of Things. Future Generation Computer Systems 100, (November 2019), 144–164. DOI:https://doi.org/10.1016/J.FUTURE.2019.04.038
+
+\subsection*{Short Summary} 
+At its core, the paper discusses challenges in the security of the perception layer of IoT. It starts by giving an overview of the different components of IoT wherein it diverts slightly from the more popular approach of 3 layers (application, network, perception/physical) by having 6 (identification, sensing, semantic, services, computation, communication). Afterwards, the paper continues to talk about the security requirements (confidentiality and privacy, integrity, availability, secure communication, access control, authentication, non-repudiation). When starting to talk about the perception layer specifically, the paper first explains that a RFID system consists of and then proceeds to list a number of possible attacks on different aspects of the RFID system such as tag removal/destruction, spoofing attacks, software attacks and denial of service. This is then followed by an explanation of what WSN and RSN are and a list of possible attacks for both. The paper concludes with discussing wider problems of perception layer security to inspire more research in this area.
+
+\subsection*{Why did I read this paper?}
+I read this paper because it talks in detail about the hardware aspect of IoT, which is the hardest to properly protect against attacks due to many factors.
+
+\subsection*{Personal view of the paper}
+I think this was an extensive paper on the topic of the physical layer of IoT. There were many explanations and examples for what different technologies consist of physically and what are the different ways to attack these technologies. For someone who isn’t as experienced in the low-level aspect of technology it is an interesting and challenging read. 
+
+\subsection*{What problem does this paper address?}
+The paper addresses several security issues within the perception layer of IoT: 
+
+\begin{itemize}
+    \item \textbf{Radio frequency identification (RFID):} identifies different things using radio waves automatically within real time, essential part of IoT. Due to noise and limited resources, the RFID system is susceptible to several attacks (e.g. DDoS, spoofing, eavesdropping etc). They can be divided into physical, network, application, strategic layer and multi-layer attacks with each having several options for attacks and tactics for protection and prevention.
+    \item \textbf{Wireless sensor networks (WSN):} senses location or other things using a network of connected sensors placed randomly within a certain range and sends input to a control centre. Bridge between cyber world and real world. Due to the technological simplicity of the sensors and the nature of them being wireless, WSNs are enormously susceptible to various attacks. These can be divided into physical, data link, network and transport layer attacks.
+    \item \textbf{RFID Sensor Network (RSN):} combination of the two above, where an RFID tag and reader act as nodes to the network. The problems here are the same as described above, but with the added difficulty of RFID and WSN having different security protocols already, and them needing to be combined.
+\end{itemize}
+
+\subsection*{Is it an important problem?}
+Yes, absolutely. Especially for WSNs and RSNs, due to the open space in which they operate (that being the real world) it makes it incredibly easy to perform attacks on them which is why more security measures must be implemented and enforced. 
+
+\subsection*{What is the significance of the result and its solution?}
+As this is a survey type of paper, the significance of the result is to spread awareness of the underlying security issues in IoT as well as inspire future research.
+
+\subsection*{What are the claimed novel contributions of the paper?}
+The paper investigates the IoT perception layer security in detail. It lists the key components, security requirements, different attacks and countermeasures for protecting IoT at different layers. The paper also identifies potential research questions at the perception layer of IoT. 
+
+\subsection*{What previous work is the basis for this research?}
+The paper references over 200 papers about the perception layer security in IoT but there doesn’t seem to be direct prior work by the authors. 
+
+\subsection*{What methodology has been used?}
+
+\begin{itemize}
+    \item \textbf{For RFID:} many lightweight solutions based on authentication, passwords and encryption etc.
+    \item \textbf{For WSNs:} cryptography is used to encrypt data for the most part.
+    \item \textbf{For RSNs:} a mix of the above, although there is still research ongoing as there is no single security protocol for this network.
+\end{itemize}
+
+\subsection*{Does the methodology seem appropriate for this problem?}
+For WSNs: Yes, encryption is appropriate considering the effortlessness with which the sensors can be attacked.
+
+\subsection*{What conclusions are drawn from the results?}
+The most important conclusion is that there is still a lot of research that has to be done in the area of perception layer security. Another conclusion is that by following the ideals of authentication, confidentiality, integrity, freshness, availability, communication security, non-repudiation and access control, the whole IoT can be made a lot safer for everyone. 
+
+\subsection*{Are they valid?}
+Yes, there is a dire need for more research into the security of IoT as a whole and more specifically, the physical layer of it. 
+
+\subsection*{What did I learn?}
+I learned that the perception layer is very multi-faceted and easily susceptible to attacks as the open nature of IoT does not provide nearly enough security for our data. 
+
+\subsection*{What (if anything) would I have done differently?}
+There are just too many different types of attacks, I am not sure how beneficial it is to list so many of them. Additionally, the grammar in this paper is lacklustre at times and requires rereading to fully understand it.
+
+\end{document}
